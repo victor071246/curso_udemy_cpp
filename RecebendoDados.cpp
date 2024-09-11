@@ -15,7 +15,7 @@ int main()
 	std::cin >> Numero02;
 	Comparacao = (Numero01 == Numero02);
 	std::cout << "Numero01 igual a Numero02?: " << Comparacao << "\n"
-
+	//Lembrar de colocar tsetLocale
 
 
 
