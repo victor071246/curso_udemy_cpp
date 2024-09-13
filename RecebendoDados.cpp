@@ -13,10 +13,24 @@ int main()
 	std::cout << "Numero01 = " << Numero01 << std::endl;
 	std::cout << "Digite o segundo número: \n";
 	std::cin >> Numero02;
+
+
 	Comparacao = (Numero01 == Numero02);
 	std::cout << "Numero01 igual a Numero02?: " << Comparacao << "\n"
-	//Lembrar de colocar tsetLocale
+	Comparacao = (Numero01 != Numero02);
+	std::cout << "Numero01 diferente de Numero02?: " << Comparacao << "\n"
+	Comparacao = (Numero01 > Numero02);
+	std::cout << "Numero01 maior que Numero02?: " << Comparacao << "\n"
+	Comparacao = (Numero01 < Numero02);
+	std::cout << "Numero01 menor que Numero02?: " << Comparacao << "\n"
+	Comparacao = (Numero01 <= Numero02);
+	std::cout << "Numero01 menor ou igual Numero02?: " << Comparacao << "\n"
+	Comparacao = (Numero01 >= Numero02);
+	std::cout << "Numero01 maior ou igual Numero02?: " << Comparacao << "\n"
 
+
+
+	//Lembrar de colocar tsetLocale
 
 
 
