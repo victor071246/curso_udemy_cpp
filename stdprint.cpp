@@ -12,10 +12,13 @@ int main()
 	char Caractere{ 'c' };
 	//String é uma cadeira de caracteres, é um texto e deve estar entre aspas duplas "texto da string"
 	//Para declarar uma string usamos std::string
-	std::string Texto{ "Texto da String" };
+	std::string Texto{ "Vou aprender C++ e descobrir o lado sombrio da força!\n" };
 	//%d indica que você quer que seja colocado na string:
 	//"Valor Número Inteiro = %d " o valor da variável NumeroINteiro
-	std::printf("Valor Número Inteiro = %d Valor Número Real = %.2f - Caractere: %c - Texto: %s", NumeroInteiro, NumeroReal, Caractere, Texto);
+	std::printf("Valor Número Inteiro = %d Valor Número Real = %.2f - Caractere: %c - Texto: %s \n", NumeroInteiro, NumeroReal, Caractere, Texto.c_str());
+	std::cout << "Texto da String: " << Texto << "\n";
+
+	std::printf("O valor do Caractere digitado: %c na tabela ASCII é: %d \n", Caractere, Caractere);
 	//%d é chamado de especificador de formato
 	//Cada tipo de dado tem um especificador de formato
 	//printf é uma função que veio da linguagem c
