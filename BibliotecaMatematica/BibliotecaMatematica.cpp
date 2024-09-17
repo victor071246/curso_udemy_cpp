@@ -2,8 +2,13 @@
 #include <locale.h>
 #include "Matematica.h"
 
+int NumeroGlobal = 5;
+
 int main()
 {
+
+
+	setlocale(LC_ALL, "portuguese");
 	int Numero1, Numero2;
 	std::cout << "\nDigite o primeiro número: ";
 	std::cin >> Numero1;
