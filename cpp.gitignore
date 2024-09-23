@@ -1,0 +1,34 @@
+# Diretórios do Visual Studio
+.vs/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+.cache/
+.ipch/
+ipch/
+*.pdb
+*.user
+*.suo
+*.userprefs
+*.sln.docstates
+
+# Arquivos de build
+*.exe
+*.obj
+*.lib
+*.ilk
+*.idb
+*.ipch
+
+# Outros arquivos temporários
+*.tmp
+*.log
+*.ncb
+*.sdf
+*.opensdf
+*.cache
+
+# Diretórios de saída
+bin/
+obj/
