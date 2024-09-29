@@ -27,18 +27,25 @@ struct Pessoa
 
 int main()
 {
-	Pessoa Pessoa01;
-	Pessoa01.Nome = "Udemy";
-	Pessoa01.DtNascimento.Dia = 01;
-	Pessoa01.DtNascimento.Mes = 02;
-	Pessoa01.DtNascimento.Ano = 2009;
-	Pessoa01.Endereco.Rua = "Rua A";
-	Pessoa01.Endereco.Cidade = "Sao Francisco";
-	Pessoa01.Endereco.Estado = "California";
-	Pessoa01.Endereco.Pais = "EUA";
+	struct Pessoa Pessoa01[2];
+	for (int i = 0; i < 2; i++){
+		Pessoa01[i].Nome = "Udemy";
+		Pessoa01[i].DtNascimento.Dia = 01;
+		Pessoa01[i].DtNascimento.Mes = 02;
+		Pessoa01[i].DtNascimento.Ano = 2009;
+		Pessoa01[i].Endereco.Rua = "Rua A";
+		Pessoa01[i].Endereco.Cidade = "Sao Francisco";
+		Pessoa01[i].Endereco.Estado = "California";
+		Pessoa01[i].Endereco.Pais = "EUA";
+	}
 
-	std::cout << "Nome: " << Pessoa01.Nome << "\n";
-	std::cout << "Data de nascimento: " << Pessoa01.DtNascimento.Dia << "\\" << Pessoa01.DtNascimento.Mes << "\\" << Pessoa01.DtNascimento.Ano << "\\" << "\n";
+	
+	for (int i = 0; i < 2; i++){
+		std::cout << "Nome: " << Pessoa01[i].Nome << "\n";
+		//Para colocar uma barra invertida lembre de duplicar \\ se você colocar apenas uma barra o compilador interpreta de maneira errada
+		std::cout << "Data de nascimento: " << Pessoa01[i].DtNascimento.Dia << "\\" << Pessoa01[i].DtNascimento.Mes << "\\" << Pessoa01[i].DtNascimento.Ano << "\\" << "\n";
+	}
+	
 
 	system("PAUSE");
 	return 0;
