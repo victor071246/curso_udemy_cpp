@@ -6,13 +6,13 @@
 //Cuidado!!!!! Isso abaixo cria uma variável!!!
 //Agora RegistroLivro é uma variável!!! Criada via forma compactada de criação de variáveis do tipo struct
 
-//struct Livro
-//{
-//	int ID;
-//	float Preco;
-//	std::string Titulo;
-//	std::string Editora;
-//};
+struct Livro
+{
+	int ID;
+	float Preco;
+	std::string Titulo;
+	std::string Editora;
+};
 
 typedef struct Livro
 {
